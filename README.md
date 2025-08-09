@@ -10,8 +10,8 @@ This project demonstrates the use of modern eBPF with CO-RE (Compile Once - Run 
 
 Here is a quick demo of the monitor in action. The top panel runs the monitor, while the bottom panel runs various commands.
 
-```
-┌──(root)㉿hostname)-[~/Process-Visualisation-eBPF]
+```bash
+┌──(root)㉿(ubuntu)-[~/Process-Visualisation-eBPF]
 └─⧽ sudo ./process_monitor
 Successfully started! Tracing process exits... Press Ctrl-C to exit.
 Process exited: PID=5120, PPID=4890, COMM=ls, EXIT_CODE=0
@@ -25,10 +25,10 @@ Process exited: PID=5124, PPID=4890, COMM=cat, EXIT_CODE=1
 
 ## Features
 
-  - **Real-time Monitoring**: Captures process and thread exit events as they happen.
-  - **CO-RE Ready**: Uses modern eBPF with CO-RE for maximum portability across different kernel versions.
-  - **Lightweight & Efficient**: All event gathering is done inside the kernel, ensuring minimal performance overhead.
-  - **Detailed Information**: Provides PID, PPID, command name, and the exit code for each event.
+- **Real-time Monitoring**: Captures process and thread exit events as they happen.
+- **CO-RE Ready**: Uses modern eBPF with CO-RE for maximum portability across different kernel versions.
+- **Lightweight & Efficient**: All event gathering is done inside the kernel, ensuring minimal performance overhead.
+- **Detailed Information**: Provides PID, PPID, command name, and the exit code for each event.
 
 -----
 
@@ -38,11 +38,11 @@ This project is designed for a **Linux environment**. If you are on Windows, you
 
 You will need the following tools and libraries installed:
 
-  - `clang`
-  - `make`
-  - `libelf-dev` (or `elfutils-libelf-devel` on Fedora/CentOS)
-  - `libbpf-dev` (or `libbpf-devel` on Fedora/CentOS)
-  - `bpftool` (usually included in `linux-tools-common` or similar packages)
+- `clang`
+- `make`
+- `libelf-dev` (or `elfutils-libelf-devel` on Fedora/CentOS)
+- `libbpf-dev` (or `libbpf-devel` on Fedora/CentOS)
+- `bpftool` (usually included in `linux-tools-common` or similar packages)
 
 #### Quick Install Command (Debian/Ubuntu)
 
