@@ -44,7 +44,7 @@ You will need the following tools and libraries installed:
 - `libbpf-dev` (or `libbpf-devel` on Fedora/CentOS)
 - `bpftool` (usually included in `linux-tools-common` or similar packages)
 
-#### Quick Install Command (Debian/Ubuntu)
+### Quick Install Command (Debian/Ubuntu)
 
 You can install all dependencies with the following command:
 
@@ -59,7 +59,7 @@ sudo apt-get install -y clang make libelf-dev libbpf-dev linux-tools-common linu
 
 Follow these steps to get the program running.
 
-#### Step 1: Clone the Repository
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/n4itr0-07/Process-Visualisation-eBPF.git
@@ -128,7 +128,7 @@ Press `Ctrl+C` in the terminal where the monitor is running to stop it and clean
 
 ## Project Structure
 
-```
+```bash
 .
 ├── Makefile                # Automates the build process
 └── src/
